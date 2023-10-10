@@ -19,10 +19,8 @@ export default function WeatherApp () {
         try{
             const request = await fetch(
                 `${process.env.REACT_APP_URL}&key=${process.env.REACT_APP_KEY}&q=${city}`)
-        
             const json = await request.json()
             setWeather(json)
-            console.log(json)
         }catch(e){
             console.error(e)
         }
