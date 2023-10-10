@@ -8,7 +8,7 @@ export default function WeatherApp () {
     const [weather, setWeather] = useState(null)
     
     useEffect(() => {   
-        loadInfo('burzaco')
+        loadInfo('Buenos Aires')
     },[])
     useEffect(() => {   
         document.title=`Weather | ${weather?.location.name?? ''}`

@@ -20,7 +20,7 @@ export default function WeatherForm ({OnChageCity}) {
     }
     return (
         <form onSubmit={handleSubmit} className={styles.container}>
-            <input type="text" onChange={onChange} className={styles.input}/>
+            <input type="text" onChange={onChange} className={styles.input} placeholder="Enter a city..."/>
         </form>
     )
 
