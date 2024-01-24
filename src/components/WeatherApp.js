@@ -38,6 +38,5 @@ export default function WeatherApp () {
             {weather ? <WeatherInfo weather={weather}/> : <Loading/>}
 
         </div>
-    ) 
-    
+    )    
 }
